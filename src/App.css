@@ -1,2 +1,22 @@
 @import "tailwindcss";
 
+@keyframes ticker {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-ticker {
+    animation: ticker 40s linear infinite;
+  }
+  
+.text-header {
+  color: #1D1D1F;  /* Apply hex color to the text */
+}
+
+.text-body {
+    color: #6E6E73
+}
