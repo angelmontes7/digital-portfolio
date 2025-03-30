@@ -10,31 +10,31 @@ import mysql from '../assets/icons/mysql.png'
 const ProjectList = () => {
   const projects = [
     {
-      language: 'TypeScript',
+      language: 'TypeScript, React-Native, PostgreSQL, TailwindCSS',
       projectName: 'OpenPlay',
       description: 'Mobile Wager App',
       image: typeScript, // Add image URL here
     },
     {
-      language: 'TypeScript',
+      language: 'TypeScript, React, TailwindCSS',
       projectName: 'Digital-Portfolio',
       description: 'Task Management App',
       image: react, // Add image URL here
     },
     {
-      language: 'JavaScript',
+      language: 'JavaScript, HTML, CSS, MongoDB, WebSockets',
       projectName: 'BlackJack',
       description: 'Two-Player gambling game',
       image: javaScript, // Add image URL here
     },
     {
-      language: 'JavaScript',
+      language: 'JavaScript, HTML, EJS, CSS',
       projectName: 'Insightify',
       description: 'Google-extension host web-app',
       image: javaScript, // Add image URL here
     },
     {
-      language: 'MySQL',
+      language: 'MySQL, Java',
       projectName: 'KwonKasino',
       description: 'Database storing complex relationship',
       image: mysql, // Add image URL here

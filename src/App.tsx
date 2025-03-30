@@ -7,6 +7,7 @@ import react from './assets/icons/react.png'
 import mysql from './assets/icons/mysql.png'
 import typeScript from './assets/icons/typeScript.png'
 import postgres from './assets/icons/postgre.png'
+import tailwindcss from './assets/icons/tailwindcss.png'
 import javaScript from './assets/icons/javaScript.png'
 import ProjectList from './Components/ProjectList';
 
@@ -75,11 +76,15 @@ function App() {
                 <img src={postgres} alt="PostgreSQL Logo" className="h-8 w-8 mr-3" />
                 <span className="text-xl text-white">PostgreSQL</span>
               </div>
+              <div className="flex items-center justify-center">
+                <img src={tailwindcss} alt="Tailwindcss Logo" className="h-8 w-8 mr-3" />
+                <span className="text-xl text-white">TailwindCSS</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="bg-white mt-15 pb-40 pr-35 pl-35 rounded-lg shadow-lg mx-auto">
+      <section className="bg-white mt-15 pb-40 max-w-7xl rounded-lg mx-auto">
         <div className="justify-center items-center text-center p-6">
           <h1 className="text-header font-medium text-5xl">Value in Technology</h1>
           <p className="pt-5 pb-20 pl-55 pr-55 text-body">
@@ -122,9 +127,9 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="bg-black pb-40 pr-35 pl-35">
+      <section className="bg-black pr-30 pl-30 pb-30 pt-20 ">
         <div>
-          <h1 className="text-white">I have worked as a software engineer on many different languages such as:</h1>
+          <h1 className="text-white font-medium text-4xl pb-10 w-1/2"><span className="text-dark-gray">I have worked as a</span> software engineer <span className="text-dark-gray"> in many </span> innovative projects:</h1>
             <ProjectList />
         </div>
 

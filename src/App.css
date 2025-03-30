@@ -20,3 +20,11 @@
 .text-body {
     color: #6E6E73
 }
+
+.text-dark-gray {
+    color: #86868B;
+}
+
+.background-gray {
+    background-color: #161617;
+}
