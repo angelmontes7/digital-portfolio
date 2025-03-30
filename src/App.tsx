@@ -1,6 +1,6 @@
 import './App.css'
 import profilePic from './assets/images/profilepic.png'
-
+import { ArrowDownIcon, ChevronDownIcon } from '@heroicons/react/24/solid'
 function App() {
   return (
     <>
@@ -24,6 +24,14 @@ function App() {
             I create web applications and mobile applications that solve real-world problems.
             Let's work together!
           </h4>
+          <button className="border-1 border-white text-white py-2 px-5 rounded-full mt-4 block mx-auto">
+            <a href="#" className="text-white hover:text-gray-600">Show Work</a>
+          </button>
+          <div className="flex justify-center items-center mt-5">
+            <ArrowDownIcon className="h-12 w-12 text-gray-600" />
+          </div>
+          
+
         </div>
       </section>
     </>
