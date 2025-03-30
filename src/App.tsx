@@ -4,9 +4,12 @@ import { ArrowDownIcon } from '@heroicons/react/24/solid'
 import java from './assets/icons/java.png'
 import python from './assets/icons/python.png'
 import react from './assets/icons/react.png'
-import typeScript from './assets/icons/typescript.png'
+import mysql from './assets/icons/mysql.png'
+import typeScript from './assets/icons/typeScript.png'
 import postgres from './assets/icons/postgre.png'
 import javaScript from './assets/icons/javaScript.png'
+import ProjectList from './Components/ProjectList';
+
 function App() {
   return (
     <>
@@ -18,11 +21,11 @@ function App() {
         <a href="#" className="text-gray-400 hover:text-gray-100">Work</a>
       </nav>
       <section className="bg-gradient-to-t from-black to-gray-900 pt-0 pb-10">
-        <div className="w-120 h-auto p-6 rounded-lg shadow-lg mx-auto">
-          <img src={profilePic} alt="Profile picture" className="w-full h-auto rounded-lg mx-auto" />
-          <h2 className="text-3xl text-center mt-0">I'm Angel</h2>
-          <h3 className="text-xl text-center text-gray-200">A full-stack developer.</h3>
-          <h4 className="text-md text-center text-gray-400 mt-2">
+        <div className="w-120 h-auto p-5 rounded-lg shadow-lg mx-auto m">
+          <img src={profilePic} alt="Profile picture" className="w-full h-auto rounded-lg mx-auto mb-[-30px]" />
+          <h2 className="text-white font-medium text-7xl text-center pb-3">I'm Angel.</h2>
+          <h3 className="text-xl text-center text-gray-200 pb-3">A full-stack developer.</h3>
+          <h4 className="text-md text-center text-gray-400 pb-3">
             I create web applications and mobile applications that solve real-world problems. Let's work together!
           </h4>
           <button className="border-1 border-white text-white py-2 px-5 rounded-full mt-4 block mx-auto">
@@ -57,6 +60,10 @@ function App() {
                 <span className="text-xl text-white">Java</span>
               </div>
               <div className="flex items-center justify-center">
+                <img src={mysql} alt="MySQL Logo" className="h-8 w-8 mr-3" />
+                <span className="text-xl text-white">MySQL</span>
+              </div>
+              <div className="flex items-center justify-center">
                 <img src={python} alt="Python Logo" className="h-8 w-8 mr-3" />
                 <span className="text-xl text-white">Python</span>
               </div>
@@ -72,10 +79,10 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="bg-white mt-15 pr-35 pl-35 rounded-lg shadow-lg mx-auto">
+      <section className="bg-white mt-15 pb-40 pr-35 pl-35 rounded-lg shadow-lg mx-auto">
         <div className="justify-center items-center text-center p-6">
           <h1 className="text-header font-medium text-5xl">Value in Technology</h1>
-          <p className="pt-5 pb-10 pl-55 pr-55 text-body">
+          <p className="pt-5 pb-20 pl-55 pr-55 text-body">
             I'm driven by a simple goal: to make a difference in people's lives. 
             I love building software that helps people solve problems and makes their day a little easier. 
             For me, it's all about creating tools that not only work well but also feel right for the people 
@@ -114,6 +121,14 @@ function App() {
             </p>
           </div>
         </div>
+      </section>
+      <section className="bg-black pb-40 pr-35 pl-35">
+        <div>
+          <h1 className="text-white">I have worked as a software engineer on many different languages such as:</h1>
+            <ProjectList />
+        </div>
+
+
       </section>
     </>
   )
