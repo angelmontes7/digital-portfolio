@@ -10,16 +10,18 @@ import postgres from './assets/icons/postgre.png'
 import tailwindcss from './assets/icons/tailwindcss.png'
 import javaScript from './assets/icons/javaScript.png'
 import ProjectList from './Components/ProjectList';
+import { Link } from 'react-router-dom';
+import TechItem from './Components/TechItem'
 
 function App() {
   return (
     <>
       <nav className="flex space-x-10 bg-black p-6 justify-center">
-        <a href="#" className="text-gray-400 hover:text-gray-100">Home</a>
-        <a href="#" className="text-gray-400 hover:text-gray-100">Resume</a>
-        <a href="#" className="text-gray-400 hover:text-gray-100">Playbook</a>
-        <a href="#" className="text-gray-400 hover:text-gray-100">Contact</a>
-        <a href="#" className="text-gray-400 hover:text-gray-100">Work</a>
+        <Link to="/" className="text-gray-400 hover:text-gray-100">Home</Link>
+        <Link to="/resume" className="text-gray-400 hover:text-gray-100">Resume</Link>
+        <Link to="/playbook" className="text-gray-400 hover:text-gray-100">Playbook</Link>
+        <Link to="/contact" className="text-gray-400 hover:text-gray-100">Contact</Link>
+        <Link to="/work" className="text-gray-400 hover:text-gray-100">Work</Link>
       </nav>
       <section className="bg-gradient-to-t from-black to-gray-900 pt-0 pb-10">
         <div className="w-120 h-auto p-5 rounded-lg shadow-lg mx-auto m">
@@ -48,38 +50,14 @@ function App() {
           {/* Ticker container */}
           <div className="flex justify-center items-center">
             <div className="animate-ticker whitespace-nowrap flex items-center space-x-16">
-              <div className="flex items-center justify-center">
-                <img src={typeScript} alt="TypeScript Logo" className="h-8 w-8 mr-3" />
-                <span className="text-xl text-white">TypeScript</span>
-              </div>
-              <div className="flex items-center justify-center">
-                <img src={javaScript} alt="JavaScript Logo" className="h-8 w-8 mr-3" />
-                <span className="text-xl text-white">JavaScript</span>
-              </div>
-              <div className="flex items-center justify-center">
-                <img src={java} alt="Java Logo" className="h-8 w-8 mr-3" />
-                <span className="text-xl text-white">Java</span>
-              </div>
-              <div className="flex items-center justify-center">
-                <img src={mysql} alt="MySQL Logo" className="h-8 w-8 mr-3" />
-                <span className="text-xl text-white">MySQL</span>
-              </div>
-              <div className="flex items-center justify-center">
-                <img src={python} alt="Python Logo" className="h-8 w-8 mr-3" />
-                <span className="text-xl text-white">Python</span>
-              </div>
-              <div className="flex items-center justify-center">
-                <img src={react} alt="React Logo" className="h-8 w-8 mr-3" />
-                <span className="text-xl text-white">React</span>
-              </div>
-              <div className="flex items-center justify-center">
-                <img src={postgres} alt="PostgreSQL Logo" className="h-8 w-8 mr-3" />
-                <span className="text-xl text-white">PostgreSQL</span>
-              </div>
-              <div className="flex items-center justify-center">
-                <img src={tailwindcss} alt="Tailwindcss Logo" className="h-8 w-8 mr-3" />
-                <span className="text-xl text-white">TailwindCSS</span>
-              </div>
+              <TechItem src={typeScript} label="TypeScript" />
+              <TechItem src={javaScript} label="JavaScript" />
+              <TechItem src={postgres} label="Postgres" />
+              <TechItem src={java} label="Java" />
+              <TechItem src={python} label="Python" />
+              <TechItem src={tailwindcss} label="Tailwindcss" />
+              <TechItem src={react} label="React" />
+              <TechItem src={mysql} label="MySQL" />
             </div>
           </div>
         </div>
