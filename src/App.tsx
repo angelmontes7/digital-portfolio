@@ -110,9 +110,11 @@ function App() {
           <h1 className="text-white font-medium text-4xl pb-10 w-1/2"><span className="text-dark-gray">I have worked as a</span> software engineer <span className="text-dark-gray"> in many </span> innovative projects:</h1>
             <ProjectList />
         </div>
-
-
       </section>
+
+      <footer className="bg-black text-gray-400 text-center p-6 mt-10">
+        © 2025 Angel Montes. All rights reserved.
+      </footer>
     </>
   )
 }
