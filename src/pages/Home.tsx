@@ -53,9 +53,9 @@ const Home = () => {
                 </div>
                 </div>
             </section>
-            <section className="bg-white mt-15 pb-40 max-w-7xl rounded-lg mx-auto">
+            <section className="bg-white pb-80 pt-40 max-w-7xl rounded-lg mx-auto">
                 <div className="justify-center items-center text-center p-6">
-                <h1 className="text-header font-medium text-5xl">Value in Technology</h1>
+                <h1 className="text-header font-medium text-8xl">Value in Technology</h1>
                 <p className="pt-5 pb-20 pl-55 pr-55 text-body">
                     I'm driven by a simple goal: to make a difference in people's lives. 
                     I love building software that helps people solve problems and makes their day a little easier. 
@@ -67,7 +67,7 @@ const Home = () => {
                 {/* Flexbox container for the other three divs */}
                 <div className="flex justify-between space-x-6">
                 <div className="flex-1">
-                    <h2 className="text-header font-medium text-3xl pb-2">Work</h2>
+                    <h2 className="text-header font-medium text-4xl pb-2">Work</h2>
                     <p className='text-body'>
                     I'm a developer who turns ideas into real, working applications. 
                     I focus on making sure that the solutions I build are clear and effective, 
@@ -77,7 +77,7 @@ const Home = () => {
                     </p>
                 </div>
                 <div className="flex-1">
-                    <h2 className="text-header font-medium text-3xl pb-2">Strategy</h2>
+                    <h2 className="text-header font-medium text-4xl pb-2">Strategy</h2>
                     <p className="text-body">
                     To me, technology is about understanding people—their needs, 
                     their challenges, and what they want to accomplish. By learning more 
@@ -86,7 +86,7 @@ const Home = () => {
                     </p>
                 </div>
                 <div className="flex-1">
-                    <h2 className="text-header font-medium text-3xl pb-2">Leadership</h2>
+                    <h2 className="text-header font-medium text-4xl pb-2">Leadership</h2>
                     <p className='text-body'>
                     I believe that leadership isn't about giving orders; it's about helping others grow. 
                     I focus on building a supportive, collaborative environment where everyone feels empowered 

@@ -6,6 +6,11 @@ import typeScript from '../assets/icons/typeScript.png'
 import postgres from '../assets/icons/postgre.png'
 import javaScript from '../assets/icons/javaScript.png'
 import mysql from '../assets/icons/mysql.png'
+import openplay from '../assets/images/openplay.png'
+import insightify from '../assets/images/insightify.png'
+import favicon from '../assets/icons/favicon.png'
+import ukroadimage from '../assets/images/ukroadimage.png'
+import blackjack from '../assets/images/blackjack.png'
 
 const ProjectList = () => {
   const projects = [
@@ -14,7 +19,7 @@ const ProjectList = () => {
       language: 'TypeScript, React-Native, PostgreSQL, TailwindCSS',
       projectName: 'OpenPlay',
       description: 'Mobile wagering application with real-time betting features and secure payment integration',
-      image: typeScript,
+      image: openplay,
       category: 'Mobile Development',
       status: 'Completed',
       techStack: ['TypeScript', 'React Native', 'PostgreSQL', 'TailwindCSS'],
@@ -25,7 +30,7 @@ const ProjectList = () => {
       language: 'TypeScript, React, TailwindCSS',
       projectName: 'Digital-Portfolio',
       description: 'Responsive personal portfolio showcasing projects and professional experience',
-      image: react,
+      image: favicon,
       category: 'Web Development',
       status: 'pending',
       techStack: ['TypeScript', 'React', 'TailwindCSS'],
@@ -36,7 +41,7 @@ const ProjectList = () => {
       language: 'JavaScript, HTML, CSS, MongoDB, WebSockets',
       projectName: 'BlackJack',
       description: 'Real-time multiplayer blackjack game with live chat and betting mechanics',
-      image: javaScript,
+      image: blackjack,
       category: 'Game Development',
       status: 'Completed',
       techStack: ['JavaScript', 'HTML', 'CSS', 'MongoDB', 'WebSockets'],
@@ -47,7 +52,7 @@ const ProjectList = () => {
       language: 'JavaScript, HTML, EJS, CSS',
       projectName: 'Insightify',
       description: 'Chrome extension with companion web application for enhanced browsing analytics',
-      image: javaScript,
+      image: insightify,
       category: 'Browser Extension',
       status: 'Completed',
       techStack: ['JavaScript', 'HTML', 'EJS', 'CSS'],
@@ -56,13 +61,13 @@ const ProjectList = () => {
     {
       id: 5,
       language: 'MySQL, Java',
-      projectName: 'KwonKasino',
-      description: 'Comprehensive database system managing complex casino operations and relationships',
-      image: mysql,
-      category: 'Database Systems',
+      projectName: 'UKRoadAccidentAnalysis',
+      description: 'This dashboard provides valuable insights into road accidents in the UK for the years 2021 and 2022.',
+      image: ukroadimage,
+      category: 'Data Analysis',
       status: 'Completed',
-      techStack: ['MySQL', 'Java'],
-      highlights: ['Complex relationships', 'Data integrity', 'Performance optimization']
+      techStack: ['PowerBI', 'MySQL', 'PowerPoint'],
+      highlights: ['Complex relationships', 'Data integrity', 'Data Analysis', 'Presentation']
     },
     {
       id: 6,
