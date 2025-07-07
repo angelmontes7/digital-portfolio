@@ -89,7 +89,6 @@ const ProjectList = () => {
   return (
     <section className="py-20 text-white bg-[radial-gradient(circle_at_center,_#1f2937,_#111827,_#000000)]">
       <div className="max-w-7xl mx-auto px-6">
-
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold tracking-tight text-white">My Work</h2>

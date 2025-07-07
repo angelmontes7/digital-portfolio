@@ -15,6 +15,28 @@ const Home = () => {
     return (
         <>
             <section className="bg-gradient-to-t from-black to-gray-900 pt-0 pb-10">
+                {/* Animated background shapes */}
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                    <div className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full animate-pulse"></div>
+                    <div className="absolute top-1/2 right-20 w-32 h-32 bg-purple-400/20 rounded-full animate-bounce"></div>
+                    <div className="absolute bottom-20 left-1/3 w-16 h-16 bg-blue-400/30 rounded-full animate-pulse"></div>
+                </div>
+
+                {/* Floating particles */}
+                <div className="absolute inset-0 pointer-events-none">
+                    {[...Array(100)].map((_, i) => (
+                    <div
+                        key={i}
+                        className="absolute w-1 h-1 bg-white/30 rounded-full animate-pulse"
+                        style={{
+                        left: `${Math.random() * 100}%`,
+                        top: `${Math.random() * 100}%`,
+                        animationDelay: `${Math.random() * 3}s`,
+                        animationDuration: `${2 + Math.random() * 3}s`
+                        }}
+                    />
+                    ))}
+                </div>
                 <div className="w-120 h-auto p-5 rounded-lg shadow-lg mx-auto m">
                 <img src={profilePic} alt="Profile picture" className="w-full h-auto rounded-lg mx-auto mb-[-30px]" />
                 <h2 className="text-white font-medium text-7xl text-center pb-3">I'm Angel.</h2>
@@ -96,9 +118,38 @@ const Home = () => {
                 </div>
                 </div>
             </section>
-            <section className="bg-black pr-30 pl-30 pb-30 pt-20 ">
-                <h1 className="text-white font-medium text-4xl pb-10 w-1/2"><span className="text-dark-gray">I have worked as a</span> software engineer <span className="text-dark-gray"> in many </span> innovative projects:</h1>
-                <ProjectList />
+            <section className="bg-gradient-to-b from-black to-gray-900 pr-30 pl-30 pb-30 pt-20 relative overflow-hidden">
+                {/* Animated background shapes */}
+                <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+                    <div className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full animate-pulse"></div>
+                    <div className="absolute top-1/2 right-20 w-32 h-32 bg-purple-400/20 rounded-full animate-bounce"></div>
+                    <div className="absolute bottom-20 left-1/3 w-16 h-16 bg-blue-400/30 rounded-full animate-pulse"></div>
+                </div>
+
+                {/* Floating particles */}
+                <div className="absolute inset-0 pointer-events-none z-0">
+                    {[...Array(100)].map((_, i) => (
+                    <div
+                        key={i}
+                        className="absolute w-1 h-1 bg-white/30 rounded-full animate-pulse"
+                        style={{
+                        left: `${Math.random() * 100}%`,
+                        top: `${Math.random() * 100}%`,
+                        animationDelay: `${Math.random() * 3}s`,
+                        animationDuration: `${2 + Math.random() * 3}s`,
+                        }}
+                    />
+                    ))}
+                </div>
+
+                {/* Project content */}
+                <div className="relative z-10">
+                    <h1 className="text-white font-medium text-4xl pb-10 w-1/2">
+                        <span className="text-dark-gray">I have worked as a</span> software engineer{' '}
+                        <span className="text-dark-gray"> in many </span> innovative projects:
+                    </h1>
+                    <ProjectList />
+                </div>
             </section>
         </>
     );
