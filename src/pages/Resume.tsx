@@ -41,7 +41,7 @@ const Resume = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-blue-900 text-white overflow-hidden">
 
       {/* Skills Ticker */}
       <section className="relative py-5 pb-10 overflow-hidden">
