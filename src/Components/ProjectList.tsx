@@ -82,7 +82,7 @@ const ProjectList = () => {
   const uniqueTech = [...new Set(projects.flatMap(p => p.techStack))];
 
   return (
-    <section className="bg-gradient-to-br from-black via-gray-900 to-gray-800 py-20 text-white">
+    <section className="py-20 text-white bg-[radial-gradient(circle_at_center,_#1f2937,_#111827,_#000000)]">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}

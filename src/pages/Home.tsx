@@ -97,10 +97,8 @@ const Home = () => {
                 </div>
             </section>
             <section className="bg-black pr-30 pl-30 pb-30 pt-20 ">
-                <div>
                 <h1 className="text-white font-medium text-4xl pb-10 w-1/2"><span className="text-dark-gray">I have worked as a</span> software engineer <span className="text-dark-gray"> in many </span> innovative projects:</h1>
-                    <ProjectList />
-                </div>
+                <ProjectList />
             </section>
         </>
     );
